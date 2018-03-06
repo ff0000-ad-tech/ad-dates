@@ -1,6 +1,9 @@
-export { default as DateManager } from './lib/DateManager.js'
-export { default as DateFormatter } from './lib/DateFormatter.js'
-export { default as Timezone } from './lib/Timezone.js'
-export { default as TzDate } from './lib/TzDate.js'
-export { default as RecurringSchedule } from './lib/RecurringSchedule.js'
-export { default as DateSchedule } from './lib/DateSchedule.js'
+export { default as Timezone } from './lib/Timezone'
+export { default as TzDate } from './lib/TzDate'
+export { default as RecurringSchedule } from './lib/RecurringSchedule'
+export { default as DateSchedule } from './lib/DateSchedule'
+
+import * as DateFormatter from './lib/DateFormatter'
+import * as DateManager from './lib/DateManager'
+import * as DateUtils from './lib/DateUtils'
+export { DateFormatter, DateManager, DateUtils }
