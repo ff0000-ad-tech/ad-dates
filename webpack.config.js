@@ -34,7 +34,7 @@ module.exports = {
 	plugins: [
 		new UglifyJsPlugin({
 			uglifyOptions: {
-				drop_console: false
+				drop_console: true
 			}
 		}),
 		new IndexPlugin(null, {
