@@ -1,7 +1,5 @@
 const path = require('path')
 const UglifyJsPlugin = require('webpack').optimize.UglifyJsPlugin
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const IndexPlugin = require('@ff0000-ad-tech/wp-plugin-index')
 const log = require('@ff0000-ad-tech/debug').debug('webpack.config.js')
 
 // prettier-ignore
@@ -19,10 +17,10 @@ const babelOptions = {
 }
 
 module.exports = {
-	entry: path.resolve(__dirname, 'index.js'),
+	entry: path.resolve(__dirname, `./tmpl/ad-dates.js`),
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'ad-dates.umd.js',
+		filename: 'ad-dates.min.js',
 		library: 'adDates',
 		libraryTarget: 'umd'
 	},
@@ -35,17 +33,6 @@ module.exports = {
 		new UglifyJsPlugin({
 			uglifyOptions: {
 				drop_console: true
-			}
-		}),
-		new IndexPlugin(null, {
-			source: {
-				path: `./tmpl/ad-dates.js`
-			},
-			inject: {
-				'ad-dates': './dist/ad-dates.umd.js'
-			},
-			output: {
-				path: `./dist/ad-dates.inline.js`
 			}
 		})
 	],
@@ -67,13 +54,6 @@ module.exports = {
 					}
 				]
 			},
-			// {
-			// 	test: request => {
-			// 		log('test2()', request.includes('ad-dates'), request.endsWith('index.js'), '|', request)
-			// 		return request.includes('ad-dates') && request.endsWith('index.js')
-			// 	},
-			// 	use: 'exports-loader?TzDate,RecurringSchedule,DateSchedule,spanish,DateFormatter,DateManager,DateUtils,Timezone'
-			// },
 			{
 				test: /\.js$/,
 				use: [
