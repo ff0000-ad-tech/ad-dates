@@ -17,7 +17,7 @@ const babelOptions = {
 }
 
 module.exports = {
-	entry: path.resolve(__dirname, `./tmpl/ad-dates.js`),
+	entry: path.resolve(__dirname, `./dist-entry.js`),
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'ad-dates.min.js',
