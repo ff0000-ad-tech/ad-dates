@@ -2,6 +2,8 @@ const path = require('path')
 const UglifyJsPlugin = require('webpack').optimize.UglifyJsPlugin
 const log = require('@ff0000-ad-tech/debug').debug('webpack.config.js')
 
+const DM = require('@ff0000-ad-tech/wp-deploy-manager')
+
 // prettier-ignore
 const babelOptions = {
 	"presets": [
@@ -25,9 +27,7 @@ module.exports = {
 		libraryTarget: 'umd'
 	},
 	resolve: {
-		alias: {
-			'ad-utils': path.resolve(__dirname, 'node_modules/@ff0000-ad-tech/ad-utils')
-		}
+		alias: DM.aliases.getTopLevel(path.resolve(__dirname, 'node_modules/@ff0000-ad-tech'))
 	},
 	plugins: [
 		new UglifyJsPlugin({

@@ -1,6 +1,7 @@
 export { default as TzDate } from './lib/TzDate.js'
 export { default as RecurringSchedule } from './lib/RecurringSchedule.js'
 export { default as DateSchedule } from './lib/DateSchedule.js'
+export { default as english } from './lib/languages/labelEnglish.js'
 export { default as spanish } from './lib/languages/labelSpanish.js'
 
 import * as DateFormatter from './lib/DateFormatter.js'
