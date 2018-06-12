@@ -22,9 +22,8 @@ module.exports = {
 	entry: path.resolve(__dirname, `./dist-entry.js`),
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'ad-dates.min.js',
-		// library: 'adDates',
-		libraryTarget: 'umd'
+		filename: 'ad-dates.min.js'
+		// libraryTarget: 'umd'
 	},
 	resolve: {
 		alias: DM.aliases.getTopLevel(path.resolve(__dirname, 'node_modules/@ff0000-ad-tech'))
