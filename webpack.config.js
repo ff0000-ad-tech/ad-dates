@@ -23,7 +23,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'ad-dates.min.js',
-		library: 'adDates',
+		// library: 'adDates',
 		libraryTarget: 'umd'
 	},
 	resolve: {
