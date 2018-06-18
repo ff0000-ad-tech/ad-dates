@@ -8,7 +8,7 @@
 	"main": "index.js",
 	"scripts": {
 		"pub": "np",
-		"dist": "npx webpack --config webpack.config.js",
+		"dist": "npx webpack --config webpack.config.js --env.environment=debug && npx webpack --config webpack.config.js --env.environment=min",
 		"localhost": "http-server"
 	},
 	"repository": {
