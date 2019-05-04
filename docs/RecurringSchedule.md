@@ -16,17 +16,17 @@
 
 ### new RecurringSchedule()
 Import from <a href="https://github.com/ff0000-ad-tech/ad-dates">ad-dates</a>
-		<br>
-		<pre class="sunlight-highlight-javascript">
+<br>
+<pre class="sunlight-highlight-javascript">
 // importing into an ES6 class
 import { RecurringSchedule } from 'ad-dates'
 </pre>
-		<br><br>
-		
-		This class is for determining the next showtime for events that repeat on a weekly basis. For example, you have a tune-in that
-		is every Friday at 6pm, and you want your date messaging to update dynamically.
-		
-		<pre class="sunlight-highlight-javascript">
+<br><br>
+
+This class is for determining the next showtime for events that repeat on a weekly basis. For example, you have a tune-in that
+is every Friday at 6pm, and you want your date messaging to update dynamically.
+
+<pre class="sunlight-highlight-javascript">
 var schedule = new RecurringSchedule({	
 	tuneins: [
 		{	
@@ -37,10 +37,9 @@ var schedule = new RecurringSchedule({
 	]
 });			
 </pre>
-		<br>
-
-		For more complex schedules( like sports tournaments ), a more complex model might look like this
-		<pre class="sunlight-highlight-javascript">
+<br>
+For more complex schedules( like sports tournaments ), a more complex model might look like this
+<pre class="sunlight-highlight-javascript">
 var schedule = new RecurringSchedule({	
 	tuneins: [
 		{	
@@ -58,11 +57,11 @@ var schedule = new RecurringSchedule({
 	]
 });
 </pre>
-		<br>
-		
-		Just like DateSchedule, this uses the standard schedule to create the date messaging, which is accessed with
-		the same methods.
-		<pre class="sunlight-highlight-javascript">
+<br>
+
+Just like DateSchedule, this uses the standard schedule to create the date messaging, which is accessed with
+the same methods.
+<pre class="sunlight-highlight-javascript">
 schedule.print()
 schedule.currentSchedule.print()
 schedule.currentSchedule.target.print()
@@ -90,8 +89,8 @@ Getter : An object of the current date, label and optional callback
 **Example**  
 ```js
 mySchedule.current.date
-				mySchedule.current.label
-				mySchedule.current.callback()
+mySchedule.current.label
+mySchedule.current.callback()
 ```
 <a name="RecurringSchedule.currentDate"></a>
 
@@ -117,10 +116,10 @@ mySchedule.currentLabel
 
 ### RecurringSchedule.print()
 Traces out all dates in order 
-		
-		<pre class="sunlight-highlight-javascript">
+
+<pre class="sunlight-highlight-javascript">
 // called on Thursday 2017-06-01 14:08:00-07:00
-mySchedule.print();
+mySchedule.print()
 
 // DateSchedule.print(), length: 8
 //  - 0 Sat Jan 01 2000 00:00:00 UTC label: 1/1 12:00 am

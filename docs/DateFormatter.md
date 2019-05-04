@@ -16,10 +16,9 @@
 
 ### new DateFormatter()
 This class provides a collection of year, month, date labels along with a utility for mananipulating
-		a TzDate/Date object.
-		<br><br>	
-		Import from <a href="https://github.com/ff0000-ad-tech/ad-dates">ad-dates</a>
-		<pre class="sunlight-highlight-javascript">
+a TzDate/Date object. <br>
+Import from <a href="https://github.com/ff0000-ad-tech/ad-dates">ad-dates</a>
+<pre class="sunlight-highlight-javascript">
 import { DateFormatter } from 'ad-dates'
 </pre>
 
@@ -27,7 +26,7 @@ import { DateFormatter } from 'ad-dates'
 
 ### DateFormatter.setLanguage()
 Changes the language used for date formatting. NOTE: This is initally set from [DateManager](#DateManager).init
-	<pre class="sunlight-highlight-javascript">
+<pre class="sunlight-highlight-javascript">
 DateFormatter.setLanguage(spanish)
 </pre>
 
@@ -42,7 +41,7 @@ DateFormatter.setLanguage(spanish)
 
 ### DateFormatter.addLanguage()
 Adds a langauge option. 
-	<pre class="sunlight-highlight-javascript">
+<pre class="sunlight-highlight-javascript">
 import { spanish } from 'ad-dates'
 DateFormatter.addLanguage(spanish)
 </pre>
