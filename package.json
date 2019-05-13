@@ -32,10 +32,7 @@
 		"@ff0000-ad-tech/ad-ui": "^1.6.2",
 		"@ff0000-ad-tech/ad-utils": "^2.1.1",
 		"@ff0000-ad-tech/ad-video": "^1.2.2",
-		"@ff0000-ad-tech/ad-view": "^1.1.1",
-		"@ff0000-ad-tech/fat-jsdoc-to-md": "git+https://github.com/ff0000-ad-tech/fat-jsdoc-to-md.git",
-		"jsdoc": "git+https://github.com/ff0000-ad-tech/jsdoc.git",
-		"jsdoc-to-markdown": "^4.0.1"
+		"@ff0000-ad-tech/ad-view": "^1.1.1"
 	},
 	"devDependencies": {
 		"@ff0000-ad-tech/debug": "^4.0.2",
@@ -53,6 +50,7 @@
 		"prettier": "^1.17.0",
 		"rollup": "^0.59.2",
 		"webpack": "^3.8.1",
-		"webpack-cli": "^2.0.9"
+		"webpack-cli": "^2.0.9",
+		"@ff0000-ad-tech/ad-docs": "git+https://github.com/ff0000-ad-tech/ad-docs.git"
 	}
 }
