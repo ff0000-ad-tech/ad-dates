@@ -7,7 +7,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"pub": "np"
+		"pub": "np",
+		"test": ""
 	},
 	"engines": {
 		"node": ">=9.8.0",
